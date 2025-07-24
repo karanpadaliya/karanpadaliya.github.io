@@ -3,71 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cosad | Flutter Developer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <title>Karan Padaliya - Flutter Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="description" content="Portfolio of Karan Padaliya, Flutter Developer specializing in Android & iOS apps, API integration, UI/UX design." />
 </head>
 <body>
-  <header>
-    <h2>Cosad</h2>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
+  <header id="header">
+    <nav class="navbar sticky">
+      <div class="logo">Karan Padaliya</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#projects" class="nav-link">Portfolio</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#blog" class="nav-link">Blog</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#techstack" class="nav-link">Tech Stack</a></li>
+      </ul>
+      <button aria-label="Toggle Dark Mode" id="darkModeToggle" class="dark-mode-toggle">🌙</button>
+      <button class="nav-toggle" aria-label="Toggle navigation menu">&#9776;</button>
     </nav>
   </header>
 
-  <section class="hero" id="home">
-    <div class="glass-card">
-      <h1>Hello, I'm Cosad</h1>
-      <p>Flutter Developer | Mobile & Web</p>
-      <button class="btn">Hire Me</button>
-    </div>
-  </section>
+  <main>
+    <!-- Home / Hero -->
+    <section id="home" class="section hero">
+      <div class="hero-content">
+        <img src="profile.jpg" alt="Karan Padaliya" class="hero-photo" />
+        <h1>Karan Padaliya</h1>
+        <h2>Flutter Developer</h2>
+        <p>Building beautiful, responsive Android & iOS apps with Flutter.</p>
+        <a href="#projects" class="btn-primary">View Portfolio</a>
+      </div>
+    </section>
 
-  <section class="section" id="about">
-    <div class="glass-card">
+    <!-- About Me -->
+    <section id="about" class="section about">
       <h2>About Me</h2>
-      <p>I specialize in creating high-performance Flutter applications for mobile and web. Clean architecture, scalable codebase, and beautiful design are my focus.</p>
-    </div>
-  </section>
+      <p>
+        I am a passionate Flutter developer specializing in cross-platform app development for Android and iOS. I bring expertise in state management, UI components, API integration, and theme adaptation. My development philosophy emphasizes clean code, performance, and seamless user experience.
+      </p>
+      <h3>Tech Stack & Tools</h3>
+      <ul class="tech-icons">
+        <li><img src="icons/flutter.svg" alt="Flutter" title="Flutter" /></li>
+        <li><img src="icons/dart.svg" alt="Dart" title="Dart" /></li>
+        <li><img src="icons/firebase.svg" alt="Firebase" title="Firebase" /></li>
+        <li><img src="icons/bloc.svg" alt="Bloc" title="Bloc" /></li>
+        <li><img src="icons/getx.svg" alt="GetX" title="GetX" /></li>
+        <li><img src="icons/dio.svg" alt="Dio" title="Dio" /></li>
+        <li><img src="icons/figma.svg" alt="Figma" title="Figma" /></li>
+      </ul>
+      <p>Focused on delivering high-quality apps with efficient state management and intuitive UI/UX.</p>
+    </section>
 
-  <section class="section" id="portfolio">
-    <div class="glass-card">
+    <!-- Portfolio / Projects -->
+    <section id="projects" class="section projects">
       <h2>Portfolio</h2>
-      <ul>
-        <li><strong>Employee Management App</strong> – Efficient and scalable app with role management.</li>
-        <li><strong>Booking System</strong> – Intuitive booking solution with calendar integration.</li>
-        <li><strong>E-commerce App</strong> – Mobile and web shopping with smooth UX and payments.</li>
-      </ul>
-    </div>
-  </section>
+      <div class="project-list">
+        <article class="project-card">
+          <img src="projects/weather-app.png" alt="Flutter Weather App" />
+          <div class="project-info">
+            <h3>Flutter Weather App</h3>
+            <p><strong>Platform:</strong> Android / iOS</p>
+            <p><strong>Tech:</strong> Flutter, OpenWeather API, Bloc</p>
+            <p>Built a responsive weather app providing real-time weather updates using Flutter and clean state management.</p>
+            <p><strong>Outcome:</strong> 10K+ downloads, 4.7 rating on Play Store.</p>
+            <a href="https://github.com/karanpadaliya/flutter-weather-app" target="_blank" rel="noopener">View Code</a>
+          </div>
+        </article>
 
-  <section class="section" id="services">
-    <div class="glass-card">
+        <article class="project-card">
+          <img src="projects/portfolio-website.png" alt="Portfolio Website" />
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p><strong>Platform:</strong> Web</p>
+            <p><strong>Tech:</strong> HTML, CSS, JavaScript</p>
+            <p>Developed a responsive portfolio website to showcase skills and projects with clean UI and smooth navigation.</p>
+            <p><strong>Outcome:</strong> Improved client outreach and professional presence.</p>
+            <a href="https://karanpadaliya.github.io" target="_blank" rel="noopener">Visit Website</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
       <h2>Services</h2>
-      <ul>
-        <li>Flutter App Development</li>
-        <li>UI/UX Design</li>
-        <li>API Integration</li>
-        <li>Freelance Support</li>
+      <ul class="services-list">
+        <li>Custom Flutter App Development (Android & iOS)</li>
+        <li>API Integration & Backend Connectivity</li>
+        <li>UI/UX Design & Prototyping (Figma)</li>
+        <li>Consulting on State Management (Bloc, GetX)</li>
+        <li>App Maintenance & Performance Optimization</li>
       </ul>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="contact">
-    <div class="glass-card">
-      <h2>Contact</h2>
-      <p>Email: cosad.dev@gmail.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Location: India</p>
-    </div>
-  </section>
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial-cards">
+        <blockquote class="testimonial">
+          <p>"Karan delivered the app on time with great quality. His expertise in Flutter helped us launch quickly."</p>
+          <footer>- Jane Doe, CEO of WeatherApp Co.</footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Professional and communicative developer. Highly recommend for Flutter projects."</p>
+          <footer>- John Smith, Product Manager at FinTech Solutions</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Blog (Optional) -->
+    <section id="blog" class="section blog">
+      <h2>Blog</h2>
+      <p>Coming soon: Flutter tips, case studies, and development insights.</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <div id="formResult"></div>
+      <div class="contact-links">
+        <a href="mailto:karan@example.com" aria-label="Email">📧 Email</a>
+        <a href="https://www.linkedin.com/in/karanpadaliya" target="_blank" rel="noopener" aria-label="LinkedIn">🔗 LinkedIn</a>
+        <a href="https://github.com/karanpadaliya" target="_blank" rel="noopener" aria-label="GitHub">🐙 GitHub</a>
+        <a href="https://calendly.com/karanpadaliya" target="_blank" rel="noopener" aria-label="Schedule Meeting">📅 Schedule Meeting</a>
+      </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section resume">
+      <h2>Resume</h2>
+      <p>Download my resume for detailed experience and skills.</p>
+      <a href="resume/KaranPadaliya_Resume.pdf" download class="btn-primary">Download Resume</a>
+    </section>
+
+    <!-- Tech Stack -->
+    <section id="techstack" class="section techstack">
+      <h2>Tech Stack & Tools</h2>
+      <div class="tech-icons-large">
+        <img src="icons/flutter.svg" alt="Flutter" title="Flutter" />
+        <img src="icons/dart.svg" alt="Dart" title="Dart" />
+        <img src="icons/firebase.svg" alt="Firebase" title="Firebase" />
+        <img src="icons/bloc.svg" alt="Bloc" title="Bloc" />
+        <img src="icons/getx.svg" alt="GetX" title="GetX" />
+        <img src="icons/dio.svg" alt="Dio" title="Dio" />
+        <img src="icons/figma.svg" alt="Figma" title="Figma" />
+      </div>
+      <p>Leveraging these tools to build efficient, scalable, and beautiful applications.</p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Cosad. All rights reserved.</p>
+    <p>&copy; 2025 Karan Padaliya | 
+      <a href="https://karanpadaliya.github.io" target="_blank" rel="noopener">karanpadaliya.github.io</a>
+    </p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
